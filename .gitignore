@@ -1,0 +1,15 @@
+# Python cache files (Bunlar çöp dosyalar)
+__pycache__/
+*.pyc
+
+# Sanal ortam klasörleri (Yüklenmemeli)
+venv/
+env/
+.venv/
+
+# IDE ayar dosyaları
+.vscode/
+.idea/
+
+# Checkpoints
+.ipynb_checkpoints/
