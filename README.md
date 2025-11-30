@@ -81,13 +81,15 @@ jupyter notebook mpc_vehicle_control.ipynb
 
 ------------------------------------------------------------------------
 
-## Author
+### Vehicle Model
+![Bicycle Model](media/bicycle_model.png)
 
-Ömer Faruk Özbektaş
+The vehicle is modeled using the dynamic bicycle model...
 
+### Results
+![Tracking Performance](media/results_plot.png)
 
 ------------------------------------------------------------------------
 
-## ⚖️ License
-
-MIT License (optional)
+## Author
+Ömer Faruk Özbektaş
