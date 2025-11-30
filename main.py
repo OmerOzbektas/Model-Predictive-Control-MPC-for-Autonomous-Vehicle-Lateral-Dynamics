@@ -132,9 +132,10 @@ def main():
         return car_body, car_f_wheel, car_traj, steer_line, yaw_line
 
     ani = animation.FuncAnimation(fig, update, frames=n_steps, interval=mpc_params.Ts*1000, blit=True)
-    
+    ani.save('media/mpc_animation.gif', writer='pillow', fps=20)
     plt.tight_layout()
     plt.show()
 
 if __name__ == "__main__":
+
     main()
