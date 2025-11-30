@@ -3,23 +3,23 @@
 *A complete MPC-based lateral control and animation simulation in
 Python*
 
-This repository implements a Model Predictive Controller (MPC) for an
-autonomous vehicle's lateral dynamics using a linearized bicycle model.
-It generates a smooth double lane-change reference, computes MPC
-prediction matrices from scratch, optimizes steering inputs, and
-animates the vehicle motion.
+This repository contains a Model Predictive Controller for a
+lateral dynamics of the autonomous vehicle through a linearized bicycle model.
+It creates a smooth double lane-change reference, calculates MPC
+prediction matrices from scratch, optimizes steering, and
+shows the vehicle's motion.
 
 ------------------------------------------------------------------------
 ## Features
 
--   MPC for lateral control
--   Linear bicycle model
--   Continuous → discrete (ZOH)
--   Prediction matrices Φ, Γ, H, M
--   Tanh-based double lane change reference
--   Real‑time animation
--   Steering saturation ±30°
--   Pure NumPy/SciPy implementation
+– Model Predictive Control for Lateral Vehicle Dynamics
+- Linear bicycle model
+- Conversion from continuous to discrete time using Zero-Order Hold
+- Prediction matrices Φ, Γ, H, and M
+- Tanh-based reference for a double lane-change maneuver
+- Real-time visualization/animations
+- Steering saturation to ±30°
+- Pure NumPy & SciPy code
 
 ------------------------------------------------------------------------
 
@@ -27,26 +27,26 @@ animates the vehicle motion.
 
 ### Vehicle Model States
 
--   `v_y` -- lateral velocity\
--   `ψ` -- yaw angle\
--   `ψ̇` -- yaw rate\
+-   `v_y` -- lateral velocity
+-   `ψ` -- yaw angle
+-   `ψ̇` -- yaw rate
 -   `Y` -- lateral position
 
-Includes mass, inertia, cornering stiffnesses, geometry, and velocity.
+It includes parameters such as mass, inertias, cornering stiffness, geometry, and velocity.
 
 ### MPC
 
 -   Adjustable horizon
 -   Δu formulation
 -   Quadratic cost
--   Steering limit enforcement
+-   Enforcement of steering limits
 -   Closed-form optimal input calculation
 
 ### Simulation
 
--   `solve_ivp` numerical integration
+-   'solve_ivp' numerical integration
 -   Time step: 0.05 s (recommended)
--   Animated steering + vehicle path
+-   Steering and vehicle path visualization
 
 ## How to Run
 
