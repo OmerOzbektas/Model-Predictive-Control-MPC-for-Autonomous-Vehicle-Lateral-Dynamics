@@ -81,13 +81,8 @@ jupyter notebook mpc_vehicle_control.ipynb
 
 ------------------------------------------------------------------------
 
-### Vehicle Model
-![Bicycle Model](media/bicycle_model.png)
-
-The vehicle is modeled using the dynamic bicycle model...
-
 ### Results
-![Tracking Performance](media/results_plot.png)
+![Tracking Performance](media/mpc_animation.gif)
 
 ------------------------------------------------------------------------
 
